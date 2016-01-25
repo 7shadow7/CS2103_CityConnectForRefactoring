@@ -319,11 +319,11 @@ public class CityConnect {
 						.equalsIgnoreCase(startLocation2));
 	}
 
-	private static boolean isPositiveNonZeroInt(String s) {
+	private static boolean isPositiveNonZeroInt(String integerString) {
 		try {
-			int i = Integer.parseInt(s);
+			int integerFromString = Integer.parseInt(integerString);
 			//return true if i is greater than 0
-			return (i > 0 ? true : false);
+			return (integerFromString > 0 ? true : false);
 		} catch (NumberFormatException nfe) {
 			return false;
 		}
